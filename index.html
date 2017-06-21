@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluación final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="eventoCargar()">
+
+<div id="contenedor" class="row">
+	<div class="column">
+
+		<div class="row text-center">
+			<h1>Estudiantes</h1>
+			<div class="large-4 column callout primary">
+				<h3>Código</h3>
+				<p id="Codigo"></p>
+			</div>
+			<div class="large-4 column callout primary">
+
+				<h3>Nombre</h3>
+				<p id="Nombre"></p>
+			</div>
+			<div class="large-4 column callout primary">
+				<h3>Nota</h3>
+				<p id="Nota"></p>
+			</div>						
+	
+			<div class="column callout primary">
+			<p id="promedio-General"></p>
+			<p id="nota-Mayor"></p>
+			<p id="nota-Menor"></p>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="large-offset-2 large-8 button-group">
+				<button class="button" onclick="mostrarListado(jsonO)">Mostrar Listado Detallado</button>
+				<button class="button" onclick="mostrarPromedioGeneral(jsonO)">Mostrar Promedio General</button>
+				<button class="button" onclick="mostrarNotaMayor(jsonO)">Mostrar Nota Mayor</button>
+				<button class="button" onclick="mostrarNotaMenor(jsonO)">Mostrar Nota Menor</button>
+			</div>
+			<div class="large-offset-5 large-4 align-center">
+				<input class="button" type="reset" onclick="borrarTexto()">
+			</div>
+	</div>
+</div>
+
+
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+</html>
